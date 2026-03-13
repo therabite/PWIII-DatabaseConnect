@@ -1,6 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using PrimeiroApp.Models;
 using PrimeiroApp.Repository.Contract;
+using System.Reflection.Metadata;
 
 namespace PrimeiroApp.Repository
 {
@@ -23,14 +24,15 @@ namespace PrimeiroApp.Repository
             {
                 conexao.Open();
                 MySqlCommand cmd = new MySqlCommand("insert into usuario(nomeUsu, Cargo, DataNasc) " +
-                                                   "values (@n0omeUsu, @Cargo, @DataNasc )", conexao);
+                                                   "values (@nomeUsu, @Cargo, @DataNasc )", conexao);
 
                 cmd.Parameters.Add("@nomeUsu", MySqlDbType.VarChar).Value = usuario.nomeUsu;
-                cmd.Parameters.Add("@Cargo", MySqlDbType.VarChar).Value = usuario.nomeUsu;
-                cmd.Parameters.Add("@DataNasc", MySqlDbType.VarChar).Value = usuario.nomeUsu;
+                cmd.Parameters.Add("@Cargo", MySqlDbType.VarChar).Value = usuario.Cargo;
+                cmd.Parameters.Add("@DataNasc", MySqlDbType.Date).Value = usuario.DataNascc;
 
+                cmd.ExecuteNonQuery();
+                conexao.Close();
             }
-                throw new NotImplementedException();
         }
 
         public void Excluir(int Id)

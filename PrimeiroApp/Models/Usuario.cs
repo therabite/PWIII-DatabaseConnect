@@ -17,7 +17,7 @@ namespace PrimeiroApp.Models
 
         [Display(Name = "NAscimento")]
         [Required(ErrorMessage ="O campo nascimento é obrigatório")]
-        [DataType(DataType.DateTime)]
-        public DateTime DataNascc { get; set; }
+        [DataType(DataType.Date)]
+        public DateOnly DataNascc { get; set; }
     }
 }

@@ -279,3 +279,4 @@ C:\Users\3MTEC\Desktop\PrimeiroApp\PrimeiroApp\obj\Debug\net8.0\staticwebassets.
 C:\Users\3MTEC\Desktop\PrimeiroApp\PrimeiroApp\obj\Debug\net8.0\Primeiro.66CD7CE1.Up2Date
 C:\Users\3MTEC\Desktop\PrimeiroApp\PrimeiroApp\obj\Debug\net8.0\PrimeiroApp.genruntimeconfig.cache
 C:\Users\3MTEC\Desktop\PrimeiroApp\PrimeiroApp\obj\Debug\net8.0\ref\PrimeiroApp.dll
+C:\Users\3MTEC\Desktop\PrimeiroApp\PrimeiroApp\obj\Debug\net8.0\PrimeiroApp.sourcelink.json
